@@ -1,0 +1,12 @@
+{
+  "name": "dummy_web_app_test",
+  "version": "1.0.0",
+  "description": "cypress test for a dummye web app",
+  "main": "index.js",
+  "repository": "https://github.com/rusNaN12/dummy_web_app_test.git",
+  "author": "Ruslan Budeci <ruslan@eclecticiq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^12.12.0"
+  }
+}
