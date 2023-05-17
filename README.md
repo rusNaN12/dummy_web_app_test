@@ -3,11 +3,11 @@
 This repository contains an example Cypress testing.
 
 ## This project needs to achieve following objectives:
--[x] Provide the manual test case(s) covering the flow
--[] Automate the prepared manual test case(s)
--[] Enable the testing of the provided functionality as part of a CI/CD pipeline
--[x] Provide execution instructions and enough information explaining the final solution
--[] Describe the chosen testing approach and anything you could improve about the technical task 
+- [x] Provide the manual test case(s) covering the flow
+- [ ] Automate the prepared manual test case(s)
+- [ ] Enable the testing of the provided functionality as part of a CI/CD pipeline
+- [x] Provide execution instructions and enough information explaining the final solution
+- [ ] Describe the chosen testing approach and anything you could improve about the technical task 
 
 ## Prerequisites
 
@@ -45,13 +45,14 @@ yarn cypress:open
 
 The project's folder structure is as follows:
 
+```
 ├── cypress
 │ ├── e2e # Test files
 │ ├── fixtures # Test data files
-| |── pages # page objects 
+| |── pages # page objects
 │ └── support # Test configuration and helper files
 └── package.json # Project dependencies and scripts
-
+```
 
 - The `cypress/e2e` directory contains tests.
 - The `cypress/fixtures` directory holds the test data files.
