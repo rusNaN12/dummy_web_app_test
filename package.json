@@ -6,11 +6,12 @@
   "repository": "https://github.com/rusNaN12/dummy_web_app_test.git",
   "author": "Ruslan Budeci <ruslan@eclecticiq.com>",
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --headless"
   },
   "dependencies": {
     "cypress": "^12.12.0"
-  }
+  },
+  "devDependencies": {}
 }

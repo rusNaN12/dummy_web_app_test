@@ -30,7 +30,7 @@ describe("Inventory and cart page testing scenarios", () => {
     inventoryPage.elements.sauceLabsBoltTShirtName().click();
     //here we are forced to use failonstatus code in order to test behavior
     cy.visit("/inventory-item.html?id=test", { failOnStatusCode: false });
-    inventoryPage.elements.elmentNotFoundAddToCartBtn().should("not.exist");
+    inventoryPage.elements.elementNotFoundAddToCartBtn().should("not.exist");
   })
 
   it("Check user is not able to add an  non existing element to cart ", () => {
@@ -39,6 +39,8 @@ describe("Inventory and cart page testing scenarios", () => {
     //here we are forced to use failonstatus code in order to test behavior
     cy.visit("/inventory-item.html?id=test", { failOnStatusCode: false });
     inventoryPage.elements.elementNotFoundAddToCartBtn().click();
+    //bellow line of code willl simulate application crash in case non existing itme can no longer be added to cart
+    //window.localStorage.setItem('cart-contents', 'null'); 
     inventoryPage.elements.cartBtn().click();
   })
 
