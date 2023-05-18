@@ -3,11 +3,19 @@
 This repository contains an example Cypress testing.
 
 ## This project needs to achieve following objectives:
-- [x] Provide the manual test case(s) covering the flow
-- [ ] Automate the prepared manual test case(s)
-- [ ] Enable the testing of the provided functionality as part of a CI/CD pipeline
-- [x] Provide execution instructions and enough information explaining the final solution
-- [ ] Describe the chosen testing approach and anything you could improve about the technical task 
+- [X] Provide the manual test case(s) covering the flow
+- [X] Automate the prepared manual test case(s)
+- [X] Enable the testing of the provided functionality as part of a CI/CD pipeline
+- [X] Provide execution instructions and enough information explaining the final solution
+- [X] Describe the chosen testing approach and anything you could improve about the technical task 
+
+## Project improvements
+- Remove Hardcoded Test Data: Refactor tests to use dynamic and randomized test data generated during test execution, utilizing tools like Faker.js or other data generation libraries.
+- Extend Test Suite: Expand the existing test suite to cover a wider range of functionality, including edge cases and different scenarios to ensure comprehensive test coverage.
+- Split Tests Per Page: Organize tests into separate files or test suites based on specific pages or components of the application for better readability and maintainability.
+- Add Test Coverage Reports: Integrate a code coverage tool (e.g., Istanbul, nyc) to generate test coverage reports, enabling visibility into the percentage of code covered by the tests.
+- Publish Test Execution Report: Configure the CI pipeline to publish the test execution report to a remote repository (e.g., GitHub Pages or an external reporting service) for easy access and analysis of test results.
+
 
 ## Prerequisites
 
@@ -42,6 +50,11 @@ To lunch cypress interactive mode use following command:
 ```
 yarn cypress:open
 ```
+
+> **Note:** Also test can be executed with github actions(see on tab actions!) 
+> **Note:** During execution there are failing test due to found issues with the application.
+
+
 
 The project's folder structure is as follows:
 
